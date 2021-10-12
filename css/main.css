@@ -21,6 +21,10 @@ main {
     font-size: 50px;
     width: 90%;
 }
+.logo a{
+    text-decoration: none;
+    color: inherit;
+}
 .redes-sociais ul li{
     margin-left: 10px;
     margin-top: 20px;
@@ -48,6 +52,9 @@ main {
     display: inline-block;
     margin-left: 10px;
 }
+.menu ul li a:hover {
+    color: #00bac6;
+}
 .menu ul li a {
     color: #8b8b8b;
     text-decoration: none;
@@ -62,4 +69,46 @@ main {
     width: 30%;
     float: right;
     
+}
+.busca input {
+    background-image: url('../img/icone-search.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    border: 1px solid #d6d6d6;
+    height: 25px;
+}
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/anterior.png);
+    top: 50%;
+    left: 2%;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/proximo.png);
+    top: 50%;
+    right: 2%;
+}
+ul.slick-dots li{
+    display: inline-block;
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+ul.slick-dots li.slick-active {
+    background-color: #00bac6;
 }
