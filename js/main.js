@@ -1,11 +1,11 @@
 $('.slider-principal').slick({
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
     dots: true,
     infinite: true,
     speed: 30,
     autoplaySpeed: 2000,
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 768,
