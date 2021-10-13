@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .menu-principal {
     width: 100%;
@@ -11,7 +12,7 @@ body {
 }
 main {
     margin: 0 auto;
-    width: 960px;
+    width: 1000px;
     position: relative;
 }
 .logo h1{
@@ -29,7 +30,6 @@ main {
     margin-left: 10px;
     margin-top: 20px;
     display: inline-block;
-    float: right;
     list-style: none;
 }
 .redes-sociais img {
@@ -101,14 +101,29 @@ button.slick-next {
     top: 50%;
     right: 2%;
 }
-ul.slick-dots li{
-    display: inline-block;
-    font-size: 0px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+.slick-list {
+    width: 100%!important;
 }
-ul.slick-dots li.slick-active {
-    background-color: #00bac6;
+.slick-dots li button {
+    font-size: 0;
+    border: 2px solid #ffffff;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 35%;
+    top: 600px;
+}
+li.slick-active button {
+    background: rgb(230, 105, 130);
+}
+.slick-dots li { 
+    padding-left: 10px;
+    display: inline-block;
 }
